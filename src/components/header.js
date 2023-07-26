@@ -5,17 +5,21 @@ const styles = {
     header: {
         width: "100%",
         height: '20vh',
-        background: '#9a74db',
+        background: '#303030',
         display: 'flex'
+    },
+    h1: {
+        margin: 0,
     }
+
 }
 
 function Header() {
 
     return (
         <div style={styles.header}>
-            <img className="headerImg" alt="My wife and Myself" src="portrait.jpg"></img>
-            <h1 className="nameTitle">Blake Hollingsworth</h1>
+            <img alt="My wife and Myself" src="portrait.jpg"></img>
+            <h1 style={styles.h1}>Blake Hollingsworth</h1>
             <Navbar />
         </div>
     )
