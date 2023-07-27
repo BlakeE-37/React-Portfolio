@@ -13,7 +13,7 @@ const styles = {
     h1: {
         margin: 10,
         marginTop: 0,
-        fontSize: '10vh'
+        fontSize: '8vh'
     },
 
     portrait: {

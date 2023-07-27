@@ -1,26 +1,37 @@
 import React from "react";
 
 const styles = {
-    header: {
+    navbar: {
+        display: 'flex',
+        listStyleType: 'none',
+        gap: '3vw',
+        alignItems: 'end',
+        marginRight: 10,
+        marginLeft: 'auto'
+    },
 
+    links: {
+        textDecoration: 'none',
+        fontSize: '2.5vh',
+        color: '#FBB13C'
     }
 }
 
 function Navbar() {
 
     return (
-        <ul className="">
+        <ul style={styles.navbar}>
             <li>
-                <a href="#aboutMe" className="nav-link">About Me</a>
+                <a style={styles.links} href="#aboutMe">About Me</a>
             </li>
             <li >
-                <a href="#portfolio" className="nav-link">Portfolio</a>
+                <a style={styles.links} href="#portfolio">Portfolio</a>
             </li>
             <li >
-                <a href="#contact" className="nav-link">Contact</a>
+                <a style={styles.links} href="#contact">Contact</a>
             </li>
             <li >
-                <a href="#resume" className="nav-link">Resume</a>
+                <a style={styles.links} href="#resume">Resume</a>
             </li>
         </ul>
     )
