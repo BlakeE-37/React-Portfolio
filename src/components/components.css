@@ -43,4 +43,8 @@
     height: 10vh;
     background-color: #303030;
     display: flex;
+    position: absolute;
+    position: absolute;
+    top: 100vh;
+    transform: translateY(-100%);
 }

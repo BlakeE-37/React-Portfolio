@@ -4,7 +4,9 @@ import './components.css'
 function Footer() {
     return (
         <footer className="footer">
-
+            {/* <a></a>
+            <a></a>
+            <a></a> */}
         </footer>
     )
 }
