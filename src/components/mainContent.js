@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Header from "../components/header"
 import AboutMe from './pages/aboutMe'
 import Portfolio from './pages/portfolio'
 import Resume from './pages/resume'
@@ -14,15 +15,18 @@ function MainContent() {
                 return <AboutMe />
             case 'portfolio':
                 return <Portfolio />
-            case 'Resume':
+            case 'resume':
                 return < Resume />
-            case 'Contact':
+            case 'contact':
                 return <Contact />
         }
     }
 
+    const handlePageChange = (page) => setActivePage(page)
+
     return (
         <div>
+            <Header handlePageChange={handlePageChange} activePage={activePage} />
             {renderActivePage()}
         </div>
     )
