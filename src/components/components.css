@@ -49,9 +49,14 @@
     transform: translateY(-100%);
     justify-content: end;
     align-items: center;
+    gap: 20px;
 }
 
 .socialLink {
     color: white;
-    font-size: 7vh;
+    font-size: 5vh;
+}
+
+.footer>* {
+    margin-right: 10px;
 }
