@@ -18,3 +18,22 @@
 }
 
 /* navbar elements */
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    gap: 3vw;
+    align-items: flex-end;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.links {
+    text-decoration: none;
+    font-size: 2.5vh;
+    color: #FBB13C;
+}
+
+.links:hover {
+    color: #F09605
+}

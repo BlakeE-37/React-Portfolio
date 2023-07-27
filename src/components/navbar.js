@@ -1,37 +1,21 @@
 import React from "react";
-
-const styles = {
-    navbar: {
-        display: 'flex',
-        listStyleType: 'none',
-        gap: '3vw',
-        alignItems: 'end',
-        marginRight: 10,
-        marginLeft: 'auto'
-    },
-
-    links: {
-        textDecoration: 'none',
-        fontSize: '2.5vh',
-        color: '#FBB13C'
-    }
-}
+import './components.css'
 
 function Navbar() {
 
     return (
-        <ul style={styles.navbar}>
+        <ul className="navbar">
             <li>
-                <a style={styles.links} href="#aboutMe">About Me</a>
+                <a className="links" href="#aboutMe">About Me</a>
             </li>
             <li >
-                <a style={styles.links} href="#portfolio">Portfolio</a>
+                <a className="links" href="#portfolio">Portfolio</a>
             </li>
             <li >
-                <a style={styles.links} href="#contact">Contact</a>
+                <a className="links" href="#contact">Contact</a>
             </li>
             <li >
-                <a style={styles.links} href="#resume">Resume</a>
+                <a className="links" href="#resume">Resume</a>
             </li>
         </ul>
     )
