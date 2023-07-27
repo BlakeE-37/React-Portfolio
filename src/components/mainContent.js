@@ -10,16 +10,14 @@ function MainContent() {
     const [activePage, setActivePage] = useState('aboutMe')
 
     function renderActivePage() {
-        switch (activePage) {
-            case 'aboutMe':
-                return <AboutMe />
-            case 'portfolio':
-                return <Portfolio />
-            case 'resume':
-                return < Resume />
-            case 'contact':
-                return <Contact />
-        }
+        if (activePage === 'aboutMe') {
+            return <AboutMe />
+        } else if (activePage === 'portfolio') {
+            return <Portfolio />
+        } else if (activePage === 'resume') {
+            return < Resume />
+        } else
+            return <Contact />
     }
 
     const handlePageChange = (page) => setActivePage(page)
