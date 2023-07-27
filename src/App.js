@@ -1,7 +1,15 @@
 import React from "react";
 import Header from "./components/header"
+import Footer from './components/footer'
 import "./App.css"
 
-const App = () => <Header />;
+const App = () => {
+    return (
+        <div>
+            <Header />
+            <Footer />
+        </div>
+    )
+};
 
 export default App;
