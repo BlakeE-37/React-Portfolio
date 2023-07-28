@@ -1,7 +1,7 @@
 /* header elements */
 .header {
     width: 100%;
-    height: 20vh;
+    height: 18vh;
     background-color: #303030;
     display: flex;
     color: #EBF2FA;
@@ -10,7 +10,7 @@
 .h1 {
     margin: 10px;
     margin-top: 0;
-    font-size: 8vh;
+    font-size: 10vh;
 }
 
 .portrait {
