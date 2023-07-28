@@ -3,7 +3,7 @@ import './pages.css'
 
 function AboutMe() {
     return (
-        <div className="aboutMeContainer">
+        <div className="pageContainer">
             <img className="portrait" alt="My wife and Myself" src="portrait.jpg"></img>
             <h2 className="h2">About Me</h2>
             <p className="aboutMeParagraph">

@@ -51,9 +51,7 @@
     background-color: #303030;
     display: flex;
     position: absolute;
-    position: absolute;
-    top: 100vh;
-    transform: translateY(-100%);
+    flex-shrink: 0;
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
