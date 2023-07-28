@@ -1,3 +1,10 @@
+.bodyContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+}
+
 /* header elements */
 .header {
     width: 100%;
@@ -51,7 +58,7 @@
     background-color: #303030;
     display: flex;
     position: absolute;
-    flex-shrink: 0;
+    bottom: 0;
     justify-content: flex-end;
     align-items: center;
     gap: 20px;

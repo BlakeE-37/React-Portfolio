@@ -1,9 +1,10 @@
 .pageContainer {
     margin: 10px auto;
     width: 70vw;
-    border: 10px solid #218380;
+    border-left: 10px solid #218380;
+    border-right: 10px solid #218380;
     padding: 20px;
-    min-height: 100%;
+    margin-bottom: 11vh;
 }
 
 /* About Me styles */

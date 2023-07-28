@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/header"
+import Footer from '../components/footer'
 import AboutMe from './pages/aboutMe'
 import Portfolio from './pages/portfolio'
 import Resume from './pages/resume'
@@ -23,9 +24,10 @@ function MainContent() {
     const handlePageChange = (page) => setActivePage(page)
 
     return (
-        <div>
+        <div className="bodyContainer">
             <Header handlePageChange={handlePageChange} activePage={activePage} />
             {renderActivePage()}
+            <Footer />
         </div>
     )
 }
