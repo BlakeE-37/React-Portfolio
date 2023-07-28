@@ -4,7 +4,7 @@
     border-left: 10px solid #218380;
     border-right: 10px solid #218380;
     padding: 20px;
-    margin-bottom: 11vh;
+    margin-bottom: 12vh;
 }
 
 /* About Me styles */
@@ -31,4 +31,16 @@
     width: 70%;
     display: block;
     margin: 0 auto;
+    border: 2px solid #303030;
+}
+
+.resumeDownloadLink {
+    font-weight: bold;
+    color: #218380;
+    text-decoration: underline;
+    font-size: 2vw;
+}
+
+.resumeDownloadLink:hover {
+    color: #1b6b68;
 }

@@ -4,7 +4,7 @@ function Resume() {
     return (
         <div className="pageContainer">
             <img className="resumeImage" alt="resume" src="resume-image.jpg"></img>
-            <a target="_blank" href="resume.pdf">Download</a>
+            <a className="resumeDownloadLink" target="_blank" href="resume.pdf">Download</a>
         </div>
     )
 }
