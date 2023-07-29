@@ -10,9 +10,9 @@ const instagramElement = <FontAwesomeIcon icon={faInstagram} className="socialLi
 function Footer() {
     return (
         <footer className="footer">
-            <a href="https://github.com/BlakeE-37" target="_blank">{githubElement}</a>
-            <a href="https://www.linkedin.com/in/blakeevanhollingsworth/" target="_blank">{linkedinElement}</a>
-            <a href="https://www.instagram.com/blake.e717/" target="_blank">{instagramElement}</a>
+            <a href="https://github.com/BlakeE-37" target="_blank" rel="noreferrer">{githubElement}</a>
+            <a href="https://www.linkedin.com/in/blakeevanhollingsworth/" target="_blank" rel="noreferrer">{linkedinElement}</a>
+            <a href="https://www.instagram.com/blake.e717/" target="_blank" rel="noreferrer">{instagramElement}</a>
         </footer>
     )
 }
