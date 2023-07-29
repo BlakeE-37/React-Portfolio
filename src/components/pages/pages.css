@@ -46,20 +46,26 @@
 }
 
 /* portfolio styles */
+.allProjects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .projectContainer {
     width: 20vw;
     display: flex;
     flex-direction: column;
     border: 2px solid #303030;
     background-color: #303030;
+    margin-top: 20px;
 }
 
 .projectTitle {
     margin: 0;
     color: #EBF2FA;
 }
-
-.projectImage {}
 
 .projectLink {
     text-decoration: underline;
