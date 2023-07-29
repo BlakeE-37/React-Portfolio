@@ -76,3 +76,60 @@
 .projectLink:hover {
     color: #F09605;
 }
+
+/* contact form */
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #303030;
+    border-radius: 5px;
+    padding: 20px;
+    width: 75%;
+    margin: 0 auto;
+    background-color: #303030;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #303030;
+}
+
+.contactTitle {
+    margin-top: 0;
+    font-size: 2vw;
+    color: #EBF2FA;
+}
+
+.contactName {
+    font-size: 1.2vw;
+    background-color: #EBEBEB;
+}
+
+.contactEmail {
+    font-size: 1.2vw;
+    background-color: #EBEBEB;
+}
+
+.contactMessage {
+    height: 10vw;
+    font-size: 1.2vw;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EBEBEB;
+
+}
+
+.contactSubmit {
+    height: 2.5vw;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    background-color: #218380;
+    color: #EBF2FA;
+    cursor: pointer;
+}
+
+.contactSubmit:hover {
+    background-color: #1b6b68;
+}
