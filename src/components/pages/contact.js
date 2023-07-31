@@ -59,6 +59,7 @@ function Contact() {
     }
 
     function handleFormSubmit() {
+        console.log("form Submitted")
         return
     }
 
