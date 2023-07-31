@@ -133,3 +133,9 @@
 .contactSubmit:hover {
     background-color: #1b6b68;
 }
+
+.errorMessage {
+    color: red;
+    margin-bottom: 0;
+    font-size: 1.2vw;
+}
