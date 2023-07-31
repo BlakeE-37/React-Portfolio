@@ -14,7 +14,6 @@ function Contact() {
         const inputValue = target.value
 
         // sync the state and the value in the dom
-        // then update error message if needed
         if (inputType === "name") {
             setName(inputValue)
         } else if (inputType === "email") {
@@ -24,6 +23,7 @@ function Contact() {
         }
     };
 
+    // set error message if the input is left blank when cursor leaves 
     function handleBlur(e) {
         const { target } = e
         const inputType = target.name
@@ -32,16 +32,30 @@ function Contact() {
         if (inputType === "name") {
             if (!inputValue) {
                 setErrorMessage('Name is Required')
+            } else {
+                setErrorMessage('')
             }
         } else if (inputType === "email") {
             if (!inputValue) {
                 setErrorMessage('Email is Required')
+                // validate email
+            } else if (!validateEmail(inputValue)) {
+                setErrorMessage('Not a Valid Email')
+            } else {
+                setErrorMessage('')
             }
         } else {
             if (!inputValue) {
                 setErrorMessage('Message is Required')
+            } else {
+                setErrorMessage('')
             }
         }
+    };
+
+    function validateEmail(email) {
+        const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+        return emailRegex.test(email);
     }
 
     function handleFormSubmit() {
