@@ -21,11 +21,11 @@ function MainContent() {
             return <Contact />
     }
 
-    const handlePageChange = (page) => setActivePage(page)
+    // const handlePageChange = (page) => setActivePage(page)
 
     return (
         <div className="bodyContainer">
-            <Header handlePageChange={handlePageChange} activePage={activePage} />
+            <Header handlePageChange={setActivePage} activePage={activePage} />
             {renderActivePage()}
             <Footer />
         </div>
